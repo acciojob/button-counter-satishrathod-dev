@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Buttton() {
+const Buttton = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
@@ -9,10 +9,10 @@ function Buttton() {
 
   return (
     <div>
-      <p>Button Clicked {count} times</p>
+      <p>Button clicked {count} times</p>
       <button onClick={handleClick}>Click me</button>
     </div>
   );
-}
+};
 
 export default Buttton;
